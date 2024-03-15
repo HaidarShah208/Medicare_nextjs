@@ -27,6 +27,8 @@ const MainPage: React.FC<MainPageProps> = ({children}) => {
     setSidebar(prevSidebar => !prevSidebar);
   };
 
+  
+
   return (
     <div>
       <Header handleToggleSidebar={handleToggleSidebar} />

@@ -35,3 +35,17 @@ export const  SIDEBAR = {
     Support:Support
 
 }
+
+import Info from '../../assets/Info.svg'
+import Add from '../../assets/Add.svg'
+import Filter from '../../assets/Filter.svg'
+import SearchPatient from '../../assets/SearchPatient.svg'
+import Options from '../../assets/Options.svg'
+export const  PATIENTS = {
+    SearchPatient:SearchPatient,
+    Filter:Filter,
+    Add:Add,
+    Info:Info,
+    Options:Options
+
+}

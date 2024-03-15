@@ -12,7 +12,7 @@ function Sidebar({sidebar, handleToggleSidebar}:SidebarProps) {
   
 
   return (
-    <nav className={`fixed top-30 left-0 h-screen bg-white text-[#828282] w-64 z-50 border-e transition-transform transform ${sidebar ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}`}>
+    <nav className={`fixed top-30 left-0 h-screen bg-white w-[245px] text-[#828282] z-50 border-e transition-transform transform ${sidebar ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}`}>
       <p className='ps-6 pt-3 text-[12px] text-[#828282]'>MENU</p>
       <li className="flex items-center py-3 px-6 mt-1 cursor-pointer" >
       <Image src={SIDEBAR.Dashboard} alt={'Dashboard'}/>

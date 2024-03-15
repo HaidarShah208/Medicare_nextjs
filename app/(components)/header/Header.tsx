@@ -15,7 +15,7 @@ function Header({ handleToggleSidebar }: HeaderProps) {
           onClick={() => handleToggleSidebar()}
         />
      <Image src={IMEGES.Logo} alt={"logo"} />
-      <p className="text-[#0000AC] hidden md:block text-[37px] mx-3 border-e pe-4">Medicare</p>
+      <p className="text-[#0000AC] hidden md:block text-[37px] mx-3 border-e pe-2">Medicare</p>
       <form className="flex flex-1 bg-black-primary border border-gray-400 rounded mx-3 sm:mx-7">
         <input
           type="text"
