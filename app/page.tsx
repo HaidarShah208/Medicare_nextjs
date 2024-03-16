@@ -9,9 +9,9 @@ export default function page() {
   return (
     <>
 <MainPage>
-      {/* <Dashboard /> 
-      <Tasks/> */}
-      <Patients/>
+       <Dashboard /> 
+      {/*<Tasks/> */}
+      {/* <Patients/> */}
     </MainPage>
     </>
   )

@@ -4,13 +4,18 @@ import  Notification  from '../../assets/Notification.svg';
 import  Email  from '../../assets/Email.svg';
 import  Search  from '../../assets/Search.svg';
 import  Toggle  from '../../assets/Toggle.svg';
+import  Up  from '../../assets/Up.svg';
+import  Upred  from '../../assets/Upred.svg';
 export const IMEGES = {
     Logo:Logo,
     Logout:Logout,
     Notification:Notification,
     Email:Email,
     Search:Search,
-    Toggle:Toggle
+    Toggle:Toggle,
+    Up:Up,
+    Upred:Upred,
+
 }
 
 import Calender from '../../assets/Calender.svg'
