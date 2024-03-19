@@ -6,10 +6,9 @@ export const POST = async(req:any,)=>{
         const body=await req.json();
         console.log('body', body)
  await prisma.user.create({
-            data: {id:body?.id,
+            data: {
               email: body?.email,
-              name:body?.username,
-              address: body?.address
+              password: body?.password
             },
           })
 

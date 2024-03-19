@@ -34,7 +34,7 @@ const MainPage: React.FC<MainPageProps> = ({children}) => {
       <Header handleToggleSidebar={handleToggleSidebar} />
       <div>
         <Sidebar sidebar={!isSmallScreen || sidebar} handleToggleSidebar={handleToggleSidebar} />
-        <div className={`flex-grow ${isSmallScreen && !sidebar ? 'ml-0' : 'ml-64'}`}>
+        <div className={`flex-grow ${isSmallScreen && !sidebar ? 'ml-2' : 'sm:ml-64 ml-35'}`}>
         {children}
       </div>
       </div>

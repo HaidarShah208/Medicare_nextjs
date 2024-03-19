@@ -1,28 +1,25 @@
 'use client'
+
 import React, { useEffect, useRef } from 'react';
 import ApexCharts from 'apexcharts';
+interface DonutChartProps {
+  series: number[];
+}
 
-const DonutChart: React.FC = () => {
+const DonutChart: React.FC<DonutChartProps> = ({ series }) => {
   const chartRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (chartRef.current) {
       const options = {
-        plotOptions: {
-            pie: {
-              customScale: 0.6
-            }
-          },
-        series: [44, 55],
+        series: series,
         chart: {
+          width: 170,
           type: 'donut',
         },
         dataLabels: {
-            enabled: false, // Hide data labels
-          },
-          legend: {
-            show: false, // Hide legend
-          },
+          enabled: false,  
+        },
         responsive: [{
           breakpoint: 480,
           options: {
@@ -30,10 +27,18 @@ const DonutChart: React.FC = () => {
               width: 200
             },
             legend: {
-              position: 'bottom'
+              show: true
             }
           }
-        }]
+        }],
+        legend: {
+          show: false, // Hide legend
+        },
+        // legend: {
+        //   position: 'right',
+        //   offsetY: 0,
+        //   height: 230,
+        // }
       };
 
       const chart = new ApexCharts(chartRef.current, options);
@@ -43,9 +48,15 @@ const DonutChart: React.FC = () => {
         chart.destroy();
       };
     }
-  }, []);
+  }, [series]);
 
-  return <div id="chart" ref={chartRef} />;
+   
+
+  return (
+    <div>
+      <div id="chart" ref={chartRef}></div>
+    </div>
+  );
 };
 
 export default DonutChart;

@@ -17,6 +17,5 @@ datasource db {
 model authUsers{
   id      String   @id @default(auto()) @map("_id") @db.ObjectId
   email   String   @unique
-  name    String
-  address String
+  password String
 }

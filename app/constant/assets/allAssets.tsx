@@ -6,6 +6,7 @@ import  Search  from '../../assets/Search.svg';
 import  Toggle  from '../../assets/Toggle.svg';
 import  Up  from '../../assets/Up.svg';
 import  Upred  from '../../assets/Upred.svg';
+import  Signup  from '../../assets/Signup.svg';
 export const IMEGES = {
     Logo:Logo,
     Logout:Logout,
@@ -15,7 +16,7 @@ export const IMEGES = {
     Toggle:Toggle,
     Up:Up,
     Upred:Upred,
-
+    Signup:Signup
 }
 
 import Calender from '../../assets/Calender.svg'
@@ -24,9 +25,13 @@ import Task from '../../assets/Task.svg'
 import Analytics from '../../assets/Analytics.svg'
 import Help from '../../assets/Help.svg'
 import Message from '../../assets/Message.svg'
-import Petient from '../../assets/Petient.svg'
+import Petient from '../../assets/Patients.svg'
 import Setting from '../../assets/Setting.svg'
 import Support from '../../assets/Support.svg'
+import DashboardFocus from '../../assets/DashboardFocus.svg'
+import SchedualeFocus from '../../assets/SchedualeFocus.svg'
+import PetientFocus from '../../assets/PetientFocus.svg'
+import SettingFocus from '../../assets/SettingFocus.svg'
 
 export const  SIDEBAR = {
     Dashboard:Dashboard,
@@ -37,7 +42,11 @@ export const  SIDEBAR = {
     Message:Message,
     Petient:Petient,
     Setting:Setting,
-    Support:Support
+    Support:Support,
+    DashboardFocus:DashboardFocus,
+    SchedualeFocus:SchedualeFocus,
+    SettingFocus:SettingFocus,
+    PetientFocus:PetientFocus
 
 }
 
@@ -53,4 +62,20 @@ export const  PATIENTS = {
     Info:Info,
     Options:Options
 
+}
+
+import Option from '../../assets/Option.svg'
+import Tick from '../../assets/Tick.svg'
+import Question from '../../assets/Question.svg'
+
+export const  DASHBOARD = {
+    Option:Option,
+    Tick:Tick,
+    Question:Question
+}
+
+import Print from '../../assets/Print.svg'
+
+export const  SCHEDUALE = {
+    Print:Print
 }

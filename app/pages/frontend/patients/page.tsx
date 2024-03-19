@@ -34,7 +34,7 @@ function Patients() {
           <td className="px-6 py-4 whitespace-nowrap"><p className='bg-green-200  w-[140px] h-[25px] rounded-t-3xl rounded-b-3xl text-[12px] text-center pt-1 text-[#27AE60]'>Recovered</p></td>
           <td className="px-6 py-4 whitespace-nowrap">Data 4</td>
           <td className="px-6 py-4 whitespace-nowrap">Data 5</td>
-          <td className="px-6 py-4 whitespace-nowrap "><Image src={PATIENTS.Options} alt='option' className='ms-4'/></td>
+          <td className="px-6 py-4 whitespace-nowrap "><Image src={PATIENTS.Options} alt='option' className='ms-4 cursor-pointer'/></td>
         </tr>
       </tbody>
     </table>
